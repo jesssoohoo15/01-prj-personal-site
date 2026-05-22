@@ -1,1 +1,431 @@
-/* Add you CSS here */
+/* Add your CSS here */
+
+/* Color Palette */
+:root {
+  --light-blue: #9bb4c8;
+  --soft-blue: #91a0b4;
+  --slate-blue: #717a95;
+  --dark-slate: #3a4054;
+  --navy: #203550;
+  --text-light: #f1f5f9;
+  --text-dark: #172033;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Basic Page Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-light);
+  background-color: var(--soft-blue);
+}
+
+a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header / Navigation Bar */
+header {
+  background-color: var(--navy);
+  padding: 20px 10%;
+  border-bottom: 1px solid var(--dark-slate);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-light);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: var(--light-blue);
+}
+
+/* General Section Styling */
+section {
+  padding: 50px 10%;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  color: var(--text-light);
+}
+
+.section-card {
+  background-color: var(--dark-slate);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(23, 32, 51, 0.25);
+}
+
+.section-card p + p {
+  margin-top: 16px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 80vh;
+  background: linear-gradient(135deg, var(--slate-blue), var(--navy));
+}
+
+.hero-text {
+  max-width: 650px;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: var(--text-light);
+}
+
+.tagline {
+  color: var(--light-blue);
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: var(--text-light);
+}
+
+/* Quick Facts */
+.quick-facts {
+  display: flex;
+  gap: 16px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.quick-facts div {
+  background-color: rgba(155, 180, 200, 0.18);
+  border: 1px solid var(--light-blue);
+  border-radius: 14px;
+  padding: 14px 18px;
+  min-width: 120px;
+}
+
+.quick-facts h3 {
+  font-size: 24px;
+  color: var(--light-blue);
+  margin-bottom: 2px;
+}
+
+.quick-facts p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* Profile Image */
+.hero-image img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--light-blue);
+  box-shadow: 0 6px 18px rgba(23, 32, 51, 0.4);
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  background-color: var(--light-blue);
+  color: var(--navy);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.button:hover {
+  background-color: var(--soft-blue);
+  color: var(--navy);
+  text-decoration: none;
+}
+
+/* Skills Section */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skills-list li {
+  background-color: var(--slate-blue);
+  color: var(--text-light);
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 120px;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skills-list li:hover {
+  transform: translateY(-4px);
+  background-color: var(--light-blue);
+  color: var(--navy);
+  box-shadow: 0 4px 12px rgba(23, 32, 51, 0.35);
+}
+
+.skill-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.r-logo {
+  width: 42px;
+}
+
+/* Interests Section */
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.interest-card {
+  background-color: var(--slate-blue);
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(23, 32, 51, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.interest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(23, 32, 51, 0.35);
+}
+
+.interest-card h3 {
+  color: var(--light-blue);
+  margin-bottom: 10px;
+}
+
+.interest-card p {
+  font-size: 15px;
+}
+
+/* Coursework Section */
+.coursework-intro {
+  margin-bottom: 25px;
+  color: var(--text-light);
+  font-size: 17px;
+}
+
+.course-category {
+  font-size: 24px;
+  margin: 35px 0 18px;
+  color: var(--light-blue);
+  letter-spacing: 1px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.course-card {
+  background-color: var(--slate-blue);
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 6px 16px rgba(23, 32, 51, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(23, 32, 51, 0.4);
+}
+
+.course-code {
+  color: var(--light-blue);
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.course-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: var(--text-light);
+}
+
+.course-details {
+  color: var(--text-light);
+  margin-bottom: 18px;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topics span {
+  background-color: var(--dark-slate);
+  color: var(--text-light);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Contact Section */
+.contact-links {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.contact-links li {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.github-logo {
+  background-color: var(--text-light);
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.contact-links a {
+  color: var(--light-blue);
+  font-weight: 600;
+}
+
+.contact-links a:hover {
+  color: var(--text-light);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: var(--navy);
+  color: var(--text-light);
+}
+
+/* Back to Top Button */
+.top-button {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background-color: var(--light-blue);
+  color: var(--navy);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(23, 32, 51, 0.35);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.top-button:hover {
+  background-color: var(--soft-blue);
+  color: var(--navy);
+  text-decoration: none;
+  transform: translateY(-4px);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .quick-facts {
+    justify-content: center;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links li {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

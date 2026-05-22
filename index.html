@@ -2,10 +2,480 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jess Soo Hoo | Portfolio</title>
+
+  <!-- CSS File -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Add your HTML content here -->
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <nav>
+      <h2 class="logo">Jess Soo Hoo</h2>
+
+      <ul class="nav-links">
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#coursework">Coursework</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Intro Section -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <h1>Hi, I'm Jess</h1>
+
+      <p class="tagline">Data Science • Public Health • Healthcare Analytics</p>
+
+      <p>
+        I'm a Data Science and Health Science major at Boston University, and I'm also pursuing an MPH at BU's School of Public Health with a functional certificate in Epidemiology and Biostatistics and a context certificate in Pharmaceutical Development, Delivery, and Access.
+      </p>
+
+      <div class="quick-facts">
+        <div>
+          <h3>BU</h3>
+          <p>Student</p>
+        </div>
+
+        <div>
+          <h3>MPH</h3>
+          <p>Public Health</p>
+        </div>
+
+        <div>
+          <h3>5+</h3>
+          <p>Technical Skills</p>
+        </div>
+      </div>
+
+      <a class="button" href="#contact">Contact Me</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="me.jpg" alt="Photo of Jess Soo Hoo">
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section id="bio">
+    <div class="section-card">
+      <h2>Bio</h2>
+
+      <p>
+        As an undergrad at Boston University studying Data Science and Health Science, I am also pursuing an MPH at BU's School of Public Health with certificates in Epidemiology and Biostatistics and in Pharmaceutical Development, Delivery, and Access.
+      </p>
+
+      <p>
+        I chose this combination because the problems I'm drawn to don't fit neatly into one field. Data science is how I do the work, and public health is why it matters to me, since it keeps me focused on who a system is actually serving and who it's leaving out. Long term, I want to work in pharmaceutical tech or healthcare administration, using analytics to close the gap between what the data already shows and what actually reaches patients.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-card">
+      <h2>Skills</h2>
+
+      <ul class="skills-list">
+        <li>
+          <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML logo">
+          <span>HTML</span>
+        </li>
+
+        <li>
+          <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS logo">
+          <span>CSS</span>
+        </li>
+
+        <li>
+          <img class="skill-logo r-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" alt="R logo">
+          <span>R</span>
+        </li>
+
+        <li>
+          <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust logo">
+          <span>Rust</span>
+        </li>
+
+        <li>
+          <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python logo">
+          <span>Python</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+  <section id="interests">
+    <div class="section-card">
+      <h2>Interests</h2>
+
+      <div class="interest-grid">
+        <div class="interest-card">
+          <h3>Healthcare Analytics</h3>
+          <p>
+            Using data to improve decision-making, patient access, and healthcare operations.
+          </p>
+        </div>
+
+        <div class="interest-card">
+          <h3>Pharmaceutical Technology</h3>
+          <p>
+            Exploring how analytics and digital tools can support drug development, delivery, and access.
+          </p>
+        </div>
+
+        <div class="interest-card">
+          <h3>Public Health Equity</h3>
+          <p>
+            Understanding how systems can better serve communities and reduce gaps in care.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coursework Section -->
+  <section id="coursework">
+    <div class="section-card">
+      <h2>Coursework</h2>
+
+      <p class="coursework-intro">
+        A record of courses that have shaped my background in data science, health science,
+        public health, analytics, and healthcare systems.
+      </p>
+
+      <h3 class="course-category">Data Science</h3>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <p class="course-code">CDS DS 110</p>
+          <h3>Introduction to Data Science with Python</h3>
+          <p class="course-details">
+            Built a foundation in Python programming, data structures, data cleaning, and visualization.
+          </p>
+
+          <div class="topics">
+            <span>Python</span>
+            <span>Data Cleaning</span>
+            <span>Visualization</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">CDS DS 121</p>
+          <h3>Foundations of Data Science 2</h3>
+          <p class="course-details">
+            Studied linear algebra concepts used in data science, including vectors, matrices, independence, and orthogonality.
+          </p>
+
+          <div class="topics">
+            <span>Linear Algebra</span>
+            <span>Matrix Methods</span>
+            <span>Vector Spaces</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">CDS DS 122</p>
+          <h3>Foundations of Data Science 3</h3>
+          <p class="course-details">
+            Learned probability, statistical inference, maximum likelihood, optimization, and calculus-based data science tools.
+          </p>
+
+          <div class="topics">
+            <span>Bayes Theorem</span>
+            <span>MLE</span>
+            <span>Gradient Descent</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">CDS DS 210</p>
+          <h3>Programming for Data Science</h3>
+          <p class="course-details">
+            Applied systems-level programming and algorithms through Rust, data structures, command-line tools, and large datasets.
+          </p>
+
+          <div class="topics">
+            <span>Rust</span>
+            <span>Algorithms</span>
+            <span>Command Line</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">CDS DS 380</p>
+          <h3>Data, Society, and AI Ethics</h3>
+          <p class="course-details">
+            Examined how artificial intelligence and data science affect society, public policy, fairness, and ethical decision-making.
+          </p>
+
+          <div class="topics">
+            <span>AI Ethics</span>
+            <span>Fairness</span>
+            <span>Public Policy</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">QST BA 576</p>
+          <h3>Machine Learning for Business Analytics</h3>
+          <p class="course-details">
+            Explored supervised machine learning methods, model evaluation, prediction problems, and business applications using Python.
+          </p>
+
+          <div class="topics">
+            <span>Model Training</span>
+            <span>Prediction</span>
+            <span>Python</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">QST BA 572</p>
+          <h3>Business Experiments and Causal Methods</h3>
+          <p class="course-details">
+            Studied experimental design, causal inference, and data-driven business decisions using R and real-world digital market examples.
+          </p>
+
+          <div class="topics">
+            <span>R</span>
+            <span>A/B Testing</span>
+            <span>Causal Methods</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="course-category">Health Science</h3>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <p class="course-code">SAR HP 353</p>
+          <h3>Organization and Delivery of Health Care in the U.S.</h3>
+          <p class="course-details">
+            Studied how the U.S. healthcare system is organized, delivered, and influenced by social, environmental, and behavioral factors.
+          </p>
+
+          <div class="topics">
+            <span>Healthcare Delivery</span>
+            <span>Interdisciplinary Teams</span>
+            <span>Health Systems</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">SAR HS 300</p>
+          <h3>Epidemiology 1</h3>
+          <p class="course-details">
+            Examined patterns of disease in populations, risk factors, disease screening, and infectious disease outbreak investigation.
+          </p>
+
+          <div class="topics">
+            <span>Disease Distribution</span>
+            <span>Outbreaks</span>
+            <span>Risk Factors</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">SAR HS 325</p>
+          <h3>Introduction to Global Health</h3>
+          <p class="course-details">
+            Explored the social, economic, political, environmental, and biological factors that shape health and illness worldwide.
+          </p>
+
+          <div class="topics">
+            <span>Global Health</span>
+            <span>Health Equity</span>
+            <span>Global Solutions</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">SAR HS 348</p>
+          <h3>Global Mental Health</h3>
+          <p class="course-details">
+            Studied mental health and mental illness worldwide from a public health perspective, including treatment gaps, stigma, and policy.
+          </p>
+
+          <div class="topics">
+            <span>Mental Health</span>
+            <span>Stigma</span>
+            <span>Treatment Gaps</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">CAS BI 107</p>
+          <h3>Biology 1</h3>
+          <p class="course-details">
+            Learned about evolution, ecology, diversity of life, behavioral biology, and biological research methods.
+          </p>
+
+          <div class="topics">
+            <span>Evolution</span>
+            <span>Ecology</span>
+            <span>Field Studies</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">CAS BI 108</p>
+          <h3>Biology 2</h3>
+          <p class="course-details">
+            Studied biochemistry, cell and molecular biology, genetics, physiology, and neurobiology through lecture and lab work.
+          </p>
+
+          <div class="topics">
+            <span>Cell Biology</span>
+            <span>Genetics</span>
+            <span>Physiology</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">CAS CH 101</p>
+          <h3>General Chemistry 1</h3>
+          <p class="course-details">
+            Built foundational knowledge in atomic structure, bonding, stoichiometry, gases, thermochemistry, and laboratory safety.
+          </p>
+
+          <div class="topics">
+            <span>Stoichiometry</span>
+            <span>Thermochemistry</span>
+            <span>Lab Safety</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">SAR HS 251</p>
+          <h3>Human Nutrition Science</h3>
+          <p class="course-details">
+            Studied nutrients, digestion, metabolism, dietary patterns, chronic disease prevention, and global nutrition challenges.
+          </p>
+
+          <div class="topics">
+            <span>Metabolism</span>
+            <span>Dietary Patterns</span>
+            <span>Chronic Disease</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="course-category">MPH</h3>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <p class="course-code">SPH PH 517</p>
+          <h3>Quantitative Methods for Public Health</h3>
+          <p class="course-details">
+            Developed quantitative public health skills through epidemiologic study design, biostatistical analysis, R programming, and exposure and outcome assessment.
+          </p>
+
+          <div class="topics">
+            <span>R</span>
+            <span>Biostatistical Analysis</span>
+            <span>Exposure Assessment</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">SPH PH 718</p>
+          <h3>Leadership and Management for Public Health</h3>
+          <p class="course-details">
+            Learned practical leadership and management strategies for working with individuals, groups, communities, and public health systems.
+          </p>
+
+          <div class="topics">
+            <span>Leadership Tools</span>
+            <span>Team Management</span>
+            <span>Public Health Practice</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">SPH PH 719</p>
+          <h3>Health Systems, Law, and Policy</h3>
+          <p class="course-details">
+            Examined how laws, policies, regulations, and health system structures affect access, quality, cost, and equity.
+          </p>
+
+          <div class="topics">
+            <span>Health Law</span>
+            <span>Access and Quality</span>
+            <span>Health Equity</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <p class="course-code">SPH PH 700</p>
+          <h3>Foundations of Public Health</h3>
+          <p class="course-details">
+            Built foundational knowledge of public health, including biological, social, environmental, and behavioral factors related to human health.
+          </p>
+
+          <div class="topics">
+            <span>Biological Foundations</span>
+            <span>Human Health Factors</span>
+            <span>Population Health</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-card">
+      <h2>Where to Contact Me</h2>
+
+      <p>
+        Feel free to connect with me or view my work using the links below.
+      </p>
+
+      <ul class="contact-links">
+        <li>
+          <img class="contact-logo" src="https://img.icons8.com/color/48/gmail-new.png" alt="Gmail logo">
+          <strong>Email:</strong>
+          <a href="mailto:jessica.k.soohoo@gmail.com">jessica.k.soohoo@gmail.com</a>
+        </li>
+
+        <li>
+          <img class="contact-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn logo">
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/jessica-soo-hoo-8039961a6" target="_blank">My LinkedIn</a>
+        </li>
+
+        <li>
+          <img class="contact-logo github-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub logo">
+          <strong>GitHub:</strong>
+          <a href="https://github.com/jesssoohoo15/01-prj-personal-site" target="_blank">My GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Jess Soo Hoo. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a class="top-button" href="#top">↑</a>
+
 </body>
 </html>
